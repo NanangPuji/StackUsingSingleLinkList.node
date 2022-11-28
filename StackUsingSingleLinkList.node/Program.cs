@@ -15,4 +15,5 @@ namespace StackUsingSingleLinkList.node
             next = n;
         }
     }
+}
    
