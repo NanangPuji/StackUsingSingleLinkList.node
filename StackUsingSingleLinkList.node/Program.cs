@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StackUsingSingleLinkList.node;
+using System;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,4 +17,20 @@ namespace StackUsingSingleLinkList.node
         }
     }
 }
-   
+class stack
+{
+    node top;
+    public stack()
+
+
+    {
+        top = null;
+    }
+    bool empty()
+    {
+        if (top == null)
+            return (true);
+        else
+            return (false);
+    }
+}
