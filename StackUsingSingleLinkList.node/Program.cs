@@ -42,7 +42,24 @@ class stack
         top = fresh;
         Console.WriteLine("\n" + element + "pushed");
     }
-
+    public void pop()
+    {
+        Console.WriteLine("\n the poped elements is: " + top.info);
+        top = top.next; // make top point to the next node is squencce
+    }
+    public void display()
+    {
+        node tmp;
+        if (empty())
+            Console.WriteLine("\n Stack Empty");
+        else
+        {
+            for (tmp = top; tmp != null; tmp = tmp.next)
+            {
+                Console.WriteLine(tmp.info);
+            }
+        }
+    }
 }
 
 
